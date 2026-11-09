@@ -52,7 +52,6 @@ while(True):
             if cv2.contourArea(c)>2000:
                 x,y,w,h = cv2.boundingRect(c)
                 offset = 6
-                
                 cx = int(x + w / 2)
                 cy = int(y + h / 2)
                 cv2.circle(frame, (cx,cy),4,(255, 255, 255),-1)
